@@ -23,8 +23,8 @@ class HomeViewController: UIViewController {
     
     @objc func getData() {
         viewModel.dataReceiver(
-            weight: Float(homeView.weightTxtField.text ?? "") ?? 404,
-            height: Float(homeView.heightTxtField.text ?? "") ?? 404,
+            weight: Float(homeView.weightTxtField.text ?? defString) ?? defFloat,
+            height: Float(homeView.heightTxtField.text ?? defString) ?? defFloat,
             completion: {
             result in
             

@@ -15,5 +15,3 @@ class ResultViewModel {
         return result
     }
 }
-
-
